@@ -1,0 +1,44 @@
+#navbar {
+    border-style:outset;
+    border-color:green;
+    background-color: lightgrey;
+    border-width: 5px;
+    border-radius: 20px;
+    text-align: center
+}
+
+#navbar > li {
+/*  background-color: green;
+    display:inline-block;
+    padding: 10px
+    border: 2px solid purple;
+    color: blue;*/
+        margin-top: 5px;
+        margin-left:20px;
+        margin-right:5px;
+        margin-bottom: 5px;
+        display: inline-block;
+        border-style: inset;
+        border-width: 5px;
+        border-radius: 20px;
+        border-color: green;
+        padding: 10px;
+        background-color: lightgrey;
+        width: 10%;
+        text-align:center;
+        list-style-image: url(listpoint_transparent.png);
+        font-size: 20px;
+        font-weight: bold;
+}
+
+#navheading{
+            font-size: 60px;
+            font-family: "Times New Roman", Times, serif;
+            float:left;
+            margin: 25px 0 0 10px;
+            }
+
+#imglechuga {
+            float: right;
+            margin: 0 10px 0 0;
+            }
