@@ -30,7 +30,6 @@
         font-size: 20px;
         font-weight: bold;
 }
-
 #navheading{
             font-size: 60px;
             font-family: "Times New Roman", Times, serif;
@@ -41,4 +40,62 @@
 #imglechuga {
             float: right;
             margin: 0 10px 0 0;
+            }
+
+a{
+    color: green;
+}            
+
+html { 
+      background: url(gradientback.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+h2{
+    font-size: 45px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    border-bottom: 6px solid green;
+    border-top: 6px solid green;
+}
+
+.pright{/*This is for text on the right*/
+        padding: 10px 10px 10px 10px;
+        border: 1px solid black;
+        border-style: none;
+        background-color: lightgrey;
+        max-width: 700px;
+        max-height: 500px;
+        text-indent: 50px;
+        text-align: left;
+        font-size: 25px;
+        float: right;
+        margin: 0 5% 5% 0;
+                }
+.pleft{/*This is for text on the left*/
+        padding: 10px 10px 10px 10px;
+        border: 1px solid black;
+        border-style: none;
+        background-color: lightgrey;
+        max-width: 700px;
+        max-height: 500px;
+        text-indent: 50px;
+        text-align: left;
+        font-size: 25px;
+        float: left;
+        margin: 0 0 2% 2%;
+        }
+.textimgleft{
+            float: left;
+            max-width: 19%;
+            max-height: 19%;
+            margin: 0 0 0 10%;
+            }
+.textimgright{
+            float: right;
+            max-width: 19%;
+            max-height: 19%;
+            margin: 0 5% 10% 0%;
             }
