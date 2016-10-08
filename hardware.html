@@ -12,10 +12,22 @@
         ul{
         list-style-image: url(listpoint_transparent.png);
         }
-/*        .bottomlist > * {
-            display:inline-block;
-            vertical-align:top;
+        /*div.pieces{
+                margin: 20px 0 20px 0;
         }*/
+
+.bottomlist > * {
+        padding: 10px 10px 10px 10px;
+        border: 1px solid black;
+        border-style: none;
+        background-color: lightgrey;
+        max-width: 50%;
+        max-height: 500px;
+        text-indent: 50px;
+        text-align: center;
+        font-size: 25px;
+        
+        }
         
         </style>
     </head>
@@ -23,12 +35,12 @@
 <!--This is the beginning of the nav bar-->
         <h1 id="navheading">Computer Science</h1>
         <a href="http://imaninja.com/">
-        <img id="imglechuga"  src="kinglechuga.png" width="145" height="110">
+        <img id="imglechuga"  src="kinglechuga.png" >
         </a>
         <ul id="navbar">
             <li><a href="index.html">About Me</a></li>
             <!--<li><a href="#"><img src="https://a2ua.com/silhouette/silhouette-008.jpg"></a></li>-->
-            <li><a href="#">Hardware</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
             <!--<li><a href="#"><img src="http://img.wallpaperfolder.com/f/5D9BAE7D5537/computer-parts-zone.jpg"></a></li>-->
             <li><a href="#">Calculator</a></li>
             <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
@@ -38,25 +50,84 @@
             <!--<li><a href="#"><img src="http://www.extremetech.com/wp-content/uploads/2015/05/ai-cropped-640x353.jpg"></a></li>-->
             <li><a href="#">Big Project</a> </li>
             <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="howto.html">How TO?</a></li>
+            <li><a href="theend.html">The End</a></li>
         </ul>
 <!--This is the end of the nav bar-->
+<!--Beginning of overview-->
 <h2>Hardware</h2>
+<div class=container>
 <img class=openingimg src=pcrace.jpg>
-<div class="bottomlist, pright">
-    <p>
-        <span style="color:green;font-weight:bold">Overview:</span> Here we will be diving into the question, &quotWhat is a computer actually made of?&quot Think about it, we have them in our house, in our pockets, running our cars, flying our planes, but even though these are all different jobs all computers are built the same way. They all have motherboards, they all have CPUs, they all have RAM, but what the heck do these letters mean? Good question young padawan(sorry, Im a nerd). The answers to this question will be revealed for the following elements.</p>
-            <ul><span style="float: left; margin:0 5% 0 0">
-                <li><span style="color:green;font-weight:bold">Mother Board</span></li>
-                <li><span style="color:green;font-weight:bold">CPU</span></li>
-                <li><span style="color:green;font-weight:bold">RAM</span></li>
-        </span></ul>
-        <ul><span style="float: right; padding:0 0 0 -4%">        
-                <li><span style="color:green;font-weight:bold">PSU</span></li>
-                <li><span style="color:green;font-weight:bold">GPU</span></li>
-                <li><span style="color:green;font-weight:bold">Hard Drive</span></li>
-            </span></ul>
+<p><span style="color:green;font-weight:bold">Overview:</span> Here we will be diving into the question, &quotWhat is a computer actually made of?&quot Think about it, we have them in our house, in our pockets, running our cars, flying our planes, but even though these are all different jobs all computers are built the same way. They all have motherboards, they all have CPUs, they all have RAM, but what the heck do these letters mean? Good question young padawan(sorry, Im a nerd). The answers to this question will be revealed for the following elements.</p>
 </div>
-<p class=pleft><span style="color:green;font-weight:bold">Mother Board:</span> When referring to the motherboard I like to ask myself, &quotWhy is this called a motherboard.&quot Well think about what your mom means to you. For me, my mom is the structure of my family, everyone can connect to her and by doing so our family works in unity. Well, computer nerds have mothers too(in fact most live with them). This being said we can see how this piece of the computer earned its name; the motherboard is the structure of the computer, all the other components are placed into it. But all it is, is a very fancy circuit board. It has transistors, it has resistors, but it is designed so that certain pieces like the CPU and RAM can fit into it. There are 2 main types of motherboards, the most common that you probably have in your PC is a ATX Motherboard. An ATX motherboard compared to the other three is only different in the design(its newer; more features, faster, bigger) and like all pieces of computers, it will eventually be replaced, like the other three, by something faster, bigger, and most importantly &quotnewer.&quot
-</p>
-    </body>
+<center>
+<div class="bottomlist">
+            <ul>
+                    <li><span style="color:green;font-weight:bold">Mother Board</span></li>
+                    <li><span style="color:green;font-weight:bold">CPU</span></li>
+                    <li><span style="color:green;font-weight:bold">RAM</span></li>
+                    <li><span style="color:green;font-weight:bold">Mouse</span></li>
+                    <li><span style="color:green;font-weight:bold">Keyboard</span></li>
+                    <li><span style="color:green;font-weight:bold">Monitor</span></li>
+                    <li><span style="color:green;font-weight:bold">BUS</span></li>
+                    <li><span style="color:green;font-weight:bold">GPU</span></li>
+                    <li><span style="color:green;font-weight:bold">Hard Drive</span></li>
+                </ul>
+</div>
+</center>
+<br>
+<!--end of overview-->
+<!--Motherboard--> 
+    <h2>MotherBoard</h2>
+    <div class=container>
+        <p><span style="color:green;font-weight:bold">Mother Board:</span> When referring to the motherboard I like to ask myself, &quotWhy is this called a motherboard.&quot Well think about what your mom means to you. For me, my mom is the structure of my family, everyone can connect to her and by doing so our family works in unity. Well, computer nerds have mothers too(in fact most live with them). This being said we can see how this piece of the computer earned its name; the motherboard is the structure of the computer, all the other components are placed into it.</p>
+        <img style="max-width: 30%;max-height: 30%;" src=motherboardimg.png>
+        <img style="max-width: 25%;max-height: 25%;" src=funnymotherboard.jpg>
+        <p>But all it is, is a very fancy circuit board. It has transistors, it has resistors, but it is designed so that certain pieces like the CPU and RAM can fit into it. There are 2 main types of motherboards, the most common that you probably have in your PC is a ATX Motherboard. An ATX motherboard compared to the other three is only different in the design(its newer; more features, faster, bigger) and like all pieces of computers, it will eventually be replaced, like the other three, by something faster, bigger, and most importantly &quotnewer.&quot</p>
+    </div>
+<!--CPU--> 
+<br>
+
+    <h2>CPU</h2>
+<div class=container>
+    <p><span style="color:green;font-weight:bold">CPU: </span>I like to classify the CPU as the cerebrum, or the part of the brain that does all the thinking(im not sure what its called because I decided to take CompSci instead of physiology) because thats exactly what the CPU does. CPU stands for Central Processing Unit because it processes or thinks. The speed of a CPU is measured with GHz(Gigahertz, billions of pulses per second) and unlike a GPU(we will discuss this later) the CPU processes only one task per pulse and does so in a sequential order(one after another). What a CPU is is a chip with billions of microscopic transistors that turn off and on and it does this to at the speed of light, which is why it is so slow(yep its all about quantum processors).</p>
+    <img style="max-width:35%; max-height: 35%;" src=cpu.jpg>
+    <p>There are two main companies that produce CPUs; AMD and Intel. Whats the difference you might ask. Well, the only one I can see is the price. AMD is usually cheaper than its rival Intel. But if there is no difference, why do so many consumers spend more for Intel? Well, against all the controversy, it has to do with the brand name. Intel is more known than AMD, Intel has sponsorships with MLG(Major League Gaming) players, so their name is definitely held higher than AMD. My opinion though, buy what you can afford. Im broke, so I buy AMD and it works just as well as my Intel chips. Also, when purchasing a CPU, it is important to know if it is compatible with your motherboard, FYI</p>
+</div>
+    <img style="max-width:36%; max-height:36%;" src=AMD-v-Intel.jpg>
+<!--GPU-->    
+<br>
+
+    <h2>GPU</h2>
+<div class=container>
+    <p><span style="color:green;font-weight:bold">GPU: </span>GPU, CPU, whats the difference? Well we already went over CPU, so lets now understand GPU. GPU stands for Graphics Processing Unit. I like to think of it like human eyes. Eyes can look at something like a picture and absorb all the aspects and send it to your brain to render that image. This is exactly what the GPU does, it renders all different aspects of say your video game. But say you were blind, you could not see the image. Well you could still render an image in your brain through verbal description but that image is not as realistic. Similar, a CPU can generate images but those images would not be as realistic and would in effect take longer to make. Watch this video by Mythbusters and Nvidia for a excellent presentation of this definition as they paint the Mona Lisa in 0.008 seconds.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-P28LKWTzrI" frameborder="0" allowfullscreen></iframe>
+</div>
+ <!--Ram--> 
+
+        <h2>RAM</h2>
+<div class=container>
+        <img style="max-width:40%;max-height:40%;" src=ram.png>
+        <p><span style="color:green;font-weight:bold">RAM: </span>No this is not the animal kind of ram. This RAM is memory, Random Access Memory. All memory stored here is volatile meaning that once you turn off your computer, it no longer exists(unlike a hard drive which we will be discussing later). Types of information that might be stored could be websites you visited or games you were playing. It is an important piece of hardware for computers because it is also connected to the brain, CPU, but this time it is memory, short term memory to be exact. That amount of short term memory that can be recalled depends on the size of your computers RAM normally ranging from 2 gbs(gigabytes: form of memory) to 64 Gbs.</p>
+    </div>
+</div>
+<!--PSU--> 
+<br></br>
+
+    <h2>BUS</h2>
+<div class=container>
+    <p><span style="color:green;font-weight:bold;">BUS: </span>Not the transportation bus, but the BUS of a computer. Never heard of it, well that's because it is already in your motherboard. The bus is like the central nervous system of your computer, it is all the integrated circuits that allow each piece of the computer to work together. This is possible through external BUS, slots where you plug each component into(the yellow pieces). </p>
+    <img style="max-width:30%; max-height:30%;" src=PCIExpress.jpg>
+</div>
+    <h2>HDD/SSD</h2>
+    <div class=container>
+    <p><span style="color:green;font-weight:bold;">Hard-Drive/Solid State Drive: </span>The Hard Drive is the main memory holder for a computer and has a capacity that usually exists in Gigabytes(billions of bytes) and more recently terabytes(1,000 gigabytes or one trillion bytes) The hard drive has been a loyal component of computers for years, it does however have one slight drawback, it has mechanical(moving) pieces hence the name hard. This causes the performance speed to drop noticeable. This was an issue that many consumers settled with, that was before the release of Solid State Drives(SDD). These SDD have no moving parts causing speed to increase and the amount of energy required to drop.</p>
+    <img src=HDDvsSSD.jpg>
+    </div>
+    <h2>Mice, Keyboard, Monitor</h2>
+<div class=container>
+    <p><span style="color:green;font-weight:bold;">Mice, Keyboard, and Monitor: </span>Simple enough, these are the pieces that the user interacts with directly. The keyboard has all the letters and symbols along with other commands like space, arrows, shift, etc. The mouse is how you direct your cursor which can interact with what is displayed on the monitor. The monitor is the visual display which shows what is generated by the computer.</p>
+    <img style="max-width:30%; max-height:30%;" src=keyboard.png>
+</div>
+</body>
 </html>

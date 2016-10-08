@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+     <link rel="stylesheet" href="navbar.css" type="text/css" />
+     <style>
+        body {
+          perspective: 500px;
+        }
+        #spinner {
+          text-align: center;
+          animation-name: spin, depth;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-duration: 3s;
+        }
+        @keyframes spin {
+          from { transform: rotateY(0deg); }
+          to { transform: rotateY(-360deg); }
+        }
+        @keyframes depth {
+          0% { text-shadow: 0 0 black; }
+          25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+          50% { text-shadow: 0 0 black; }
+          75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+          100% { text-shadow: 0 0 black; }
+        }
+</style>
+    </head>
+    <body>
+        <h1 id="navheading">Computer Science</h1>
+        <a href="http://imaninja.com/">
+        <img id="imglechuga"  src="kinglechuga.png" >
+        </a>
+        <ul id="navbar">
+            <li><a href="index.html">About Me</a></li>
+            <!--<li><a href="#"><img src="https://a2ua.com/silhouette/silhouette-008.jpg"></a></li>-->
+            <li><a href="hardware.html">Hardware</a></li>
+            <!--<li><a href="#"><img src="http://img.wallpaperfolder.com/f/5D9BAE7D5537/computer-parts-zone.jpg"></a></li>-->
+            <li><a href="#">Calculator</a></li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="#">ToDo List</a></li>
+            <!--<li><a href="#"><img src="http://www.ineedmotivation.com/blog/wp-content/uploads/2008/01/todo.jpgz"></a></li>-->
+            <li><a href="#">Vindinium</a> </li>
+            <!--<li><a href="#"><img src="http://www.extremetech.com/wp-content/uploads/2015/05/ai-cropped-640x353.jpg"></a></li>-->
+            <li><a href="#">Big Project</a> </li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="howto.html">How TO?</a></li>
+            <li><a href="theend.html">The End</a></li>
+        </ul>
+    
+    <h2>How To</h2>
+    <center>
+    <div class=container>
+        <p>Here we I will be describing to you the steps I took in order to create this awesome website. This will only cover three sections:<span style="color:green; font-weight:bold; text-align:center;"> The Navbar, HTML, and CSS.</span></p>
+    </div>
+    </center>
+    <h2>The Navbar</h2>
+    <div class=container>
+        <p>Make a Navbar: Probably one of the coolest things I have created in this class is my navbar which you can see above and is on every page. It is usable on all my websites, it is super easy to import, and I can change it once and it will still work on every page that it's on. It was surprisingly simple to make though. All it is an Unordered list as you can see on the right.</p>
+            <div class=imgcontain>
+                <img src=unordererd.PNG>
+            </div>
+    </div>
+    <br>
+    <div class=container>
+        <p>By Using an unordered list I was able to further create class and id for all of these links without having to worry about putting styles into each and every page. If you will please, notice a picture of my code that I used to create the navbar. This is not on every page but instead is on one CSS file. This is not only efficient but is also pleasing to the users experience. But what is this beautiful piece of work made out of and why did I use CSS? Well you will have to find that out in my CSS section, for now let's move onto HTML.</p>
+        <img src=navbarcode.png>
+    </div>
+    <br>
+    
+    <h2>HTML</h2>
+    <div class=container>
+        <p>Hyper Text Markup Language(HTML) is the main language that is used in creating this website. The code above at the code that is used to make my navbar is not HTML. Instead HTML code looks like this:</p>
+        <img src=htmlcodestuff.PNG>
+    </div>
+<br>
+    <div class=container>
+        <p>Doesnt look like much right? Yep, its not at all. Lets go over some of the different pieces and tags that makes this up to prove just how simple it is. Lets start with how we can see which ones are tags. A tag starts with &lt;&gt; and the end of the tag looks like this(notice the slash) &lt;/&gt;</p>
+        <img style="max-width:30%;" src=Heading-Tags.jpg>
+        <p>The letters that go inside of these arrows is all dependent on what you want the tag to represent. There are several very important and common tags that you will use; &lt;p&gt; For Paragraphs &lt;/p&gt; , &lt;h1&gt; For Beginning Headings or Large Headings &lt;/h1&gt; , &lt;h2&gt; For slightly smaller Headers &lt;/h2&gt;</p>
+        <p>These tags often make up the main portion of your web page, but there are many other useful tags. For instance, notice how I am able to insert these useful images, this is possible through html. The code for this does not have a end tag and it looks like &lt; img src= &gt; Lets break this down; img is pretty simple because all it does is let the computer know that there is an image to be displayed, the src stands for source and lets the computer know where the image is located. And boom, thats it for the image tag so now you can insert images anywhere.</p>
+        <img src=noimage.png>
+        <center>
+            <p>And thats pretty much all you need to know to make your website in the regards of html. This language may be useful however there are still many limitations. For one, this language is naturally not meant for designing websites, instead this language is meant to be spoken over the internet and understood as fast as possible, this being said it is limited to how much you can customize it. Notice as I explain in my CSS section.</p>
+        </center>
+    </div>
+<br>
+<h2>CSS</h2>
+    <div class=container>
+        <p>Ah, CSS. Back in Sophomore Year I took an intro to Computer Science Class and back then we did not use any CSS, all we used in order to create our webiste was HTML. Man, I havent seen such an ugly website since the 80s and I wasnt even alive back then. Literally it looked like this:</p>
+        <img style="max-width:40%;" src=uglyhtml.png>
+    </div>
+<br>
+    <div>
+        <p>But man, with CSS you can do everything, literally. If you want spinny text you can do it.</p>
+        <h4 id=spinner>This deserves an A+</h4>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class=container>
+    <p>But getting serious now, how and why do you use CSS. Well unlike HTML, CSS is very customizable meaning that you can change aspects of each of your HTML tags. Looking back at the navbar code, I was able to create a id which means that a certain format will be applied only to the tag that I choose like I did for my unordered list. Now notice the yellow text inbetween the brackets. Each of these is used for a specific aspect that I want to change. For instance, background-color:green; I want to change the background color of my navbar and the color that I want to change it to is green. It’s that simple(do notice though that when you state what you want to change you have to use proper syntax meaning that you have to include the colon first: and then the semi-colon;) Lets take a look at another, border-width:5px; Border-width is the size of the texts border and 5px is pixels. So this means that I want the maximum size of the border to be 5 pixels. Its That Simple</p>
+    <img src=unordererd.PNG>
+    <img src=navbarcode.png>
+</div>
+    </body>
+</html>
