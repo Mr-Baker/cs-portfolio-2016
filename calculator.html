@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="navbar.css" type="text/css" />
-        <title> </title>
+        <title>Calculator</title>
     </head>
     <body>
         <!--This is the beginning of the nav bar-->
@@ -28,7 +28,27 @@
         </ul>
 <!--This is the end of the nav bar-->
 <!--Beginning of overview-->
-    <a href="Changingcolor2.html"style="border-style:outset;border-color:green;background-color: lightgrey;border-width: 5px;border-radius: 20px;text-align: center;">Check out my Color Changing Page!</h1>
+    <a href="Changingcolor2.html"style="border-style:outset;border-color:green;background-color: lightgrey;border-width: 5px;border-radius: 20px;text-align: center;">Check out my Color Changing Page!</a>
+<br>
+<br>
+<center>
+            <input type="number" id ="userNumber1"><!--This is where we create the id for the users first number and we use this id in the js file-->
+            <select id ="userFunction">
+              <option value="+">+</option> <!--Add-->
+              <option value="-">-</option> <!--subtract-->
+              <option value="/">&#247</option> <!--divide-->
+              <option value="*">&#215</option> <!--multiply-->
+              <option value="^">a&#94x</option><!--To the power of-->
+            </select>
+            <!--This is where the user chooses what kind of problem they want to solve-->
+            <input type="number" id ="userNumber2"><!--This is where we create the id for the users second number and we use this id in the js file-->
 
+            <button id="runCalculate">Click Me</button><!--This is another id that is used in the js file-->
+<br>
+
+    <div id ="answer"> Hello </div>
+</center>
+    
+    <script type="text/javascript" src="calculatorcode.js"></script>
     </body>
 </html>
