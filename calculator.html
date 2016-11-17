@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+        #calculatorbox{/*this is the id for the box around the calculator*/
+            border-style:outset;
+            border-color:green;
+            background-color: lightgrey;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+        input{
+            border-style:outset;
+            border-color:green;
+            background-color: white;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+            font-size:30px;
+        }
+        select{
+            border-style:outset;
+            border-color:green;
+            background-color: green;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+            font-size:25px;
+            font-weight:bold;
+            min-width:10%;
+            color: white;
+        }
+        </style>
         <link rel="stylesheet" href="navbar.css" type="text/css" />
         <title>Calculator</title>
     </head>
@@ -31,22 +65,27 @@
     <a href="Changingcolor2.html"style="border-style:outset;border-color:green;background-color: lightgrey;border-width: 5px;border-radius: 20px;text-align: center;">Check out my Color Changing Page!</a>
 <br>
 <br>
+<h2>Claculator</h2>
+<br>
 <center>
+    <div id=calculatorbox>
             <input type="number" id ="userNumber1"><!--This is where we create the id for the users first number and we use this id in the js file-->
-            <select id ="userFunction">
+            <select id ="operator">
               <option value="+">+</option> <!--Add-->
               <option value="-">-</option> <!--subtract-->
               <option value="/">&#247</option> <!--divide-->
               <option value="*">&#215</option> <!--multiply-->
               <option value="^">a&#94x</option><!--To the power of-->
+              <option value="sqr">n&#94;&#8730;x</option>
             </select>
             <!--This is where the user chooses what kind of problem they want to solve-->
             <input type="number" id ="userNumber2"><!--This is where we create the id for the users second number and we use this id in the js file-->
 
             <button id="runCalculate">Click Me</button><!--This is another id that is used in the js file-->
 <br>
-
-    <div id ="answer"> Hello </div>
+<br>
+        <div id ="answer" style="background-color:white;font-size:50px;border-style:outset;border-color:green;border-width: 5px;border-radius: 20px;text-align: center;padding: 10px;"> Type in the above boxes the numbers and operator you would like to calculate. </div>
+    </div>
 </center>
     
     <script type="text/javascript" src="calculatorcode.js"></script>
