@@ -51,7 +51,7 @@
             <!--<li><a href="#"><img src="http://img.wallpaperfolder.com/f/5D9BAE7D5537/computer-parts-zone.jpg"></a></li>-->
             <li><a href="calculator.html">Calculator</a></li>
             <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
-            <li><a href="#">ToDo List</a></li>
+            <li><a href="todolist.html">ToDo List</a></li>
             <!--<li><a href="#"><img src="http://www.ineedmotivation.com/blog/wp-content/uploads/2008/01/todo.jpgz"></a></li>-->
             <li><a href="#">Vindinium</a> </li>
             <!--<li><a href="#"><img src="http://www.extremetech.com/wp-content/uploads/2015/05/ai-cropped-640x353.jpg"></a></li>-->
@@ -65,20 +65,20 @@
     <a href="Changingcolor2.html"style="border-style:outset;border-color:green;background-color: lightgrey;border-width: 5px;border-radius: 20px;text-align: center;">Check out my Color Changing Page!</a>
 <br>
 <br>
-<h2>Claculator</h2>
+<h2>Calculator</h2>
 <br>
-<center>
-    <div id=calculatorbox>
+<center><!--We will begin our calculator  from here-->
+    <div id=calculatorbox><!--This div is just for the border around the calculator-->
             <input type="number" id ="userNumber1"><!--This is where we create the id for the users first number and we use this id in the js file-->
-            <select id ="operator">
+            <select id ="operator"><!--This is the id that connects to the operator var and is connected to selected var. Allows the user to choose the operator that they want to use-->
               <option value="+">+</option> <!--Add-->
               <option value="-">-</option> <!--subtract-->
               <option value="/">&#247</option> <!--divide-->
               <option value="*">&#215</option> <!--multiply-->
               <option value="^">a&#94x</option><!--To the power of-->
-              <option value="sqr">n&#94;&#8730;x</option>
+              <option value="sqr">n&#94;&#8730;x</option><!--This is for the nth root-->
             </select>
-            <!--This is where the user chooses what kind of problem they want to solve-->
+            <!--End of the possible operations-->
             <input type="number" id ="userNumber2"><!--This is where we create the id for the users second number and we use this id in the js file-->
 
             <button id="runCalculate">Click Me</button><!--This is another id that is used in the js file-->

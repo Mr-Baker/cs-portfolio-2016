@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
+        <style>
+        select{
+            border-style:outset;
+            border-color:green;
+            background-color: white;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+            font-size:30px;
+            font-weight:bold;
+            min-width:15%;
+        }
+        #toDoListBox{
+            border-style:outset;
+            border-color:green;
+            background-color: lightgrey;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+        input{
+            border-style:outset;
+            border-color:green;
+            background-color: white;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+            font-size:30px;
+        }
+        #addactivity{
+            border-style:outset;
+            border-color:green;
+            background-color: green;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+            font-size:30px;
+            color:white;
+            font-weight:bold;
+        }
+        #deleteactivity{
+            border-style:outset;
+            border-color:red;
+            background-color: red;
+            border-width: 5px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 10px;
+            font-size:30px;
+            color:white;
+            font-weight:bold;
+        }
+        #noteBox{
+            border-style:inset;
+            border-color:#7D6208;
+            background-color: #C19A18;
+            border-width: 5px;
+            text-align: center;
+            padding: 10px;
+            min-width:40%;
+            max-width:40%;
+            min-height:25pc;
+            font-size:25px;
+        }
+        </style>
+        <title>To Do List</title>
+    </head>
+    <body>
+        <!--This is the beginning of the nav bar-->
+        <h1 id="navheading">Computer Science</h1>
+        <a href="http://imaninja.com/">
+        <img id="imglechuga"  src="kinglechuga.png">
+        </a>
+        <ul id="navbar">
+            <li><a href="index.html">About Me</a></li>
+            <!--<li><a href="#"><img src="https://a2ua.com/silhouette/silhouette-008.jpg"></a></li>-->
+            <li><a href="hardware.html">Hardware</a></li>
+            <!--<li><a href="#"><img src="http://img.wallpaperfolder.com/f/5D9BAE7D5537/computer-parts-zone.jpg"></a></li>-->
+            <li><a href="calculator.html">Calculator</a></li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="todolist.html">ToDo List</a></li>
+            <!--<li><a href="#"><img src="http://www.ineedmotivation.com/blog/wp-content/uploads/2008/01/todo.jpgz"></a></li>-->
+            <li><a href="#">Vindinium</a> </li>
+            <!--<li><a href="#"><img src="http://www.extremetech.com/wp-content/uploads/2015/05/ai-cropped-640x353.jpg"></a></li>-->
+            <li><a href="#">Big Project</a> </li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="howto.html">How TO?</a></li>
+            <li><a href="theend.html">The End</a></li>
+        </ul>
+<!--This is the end of the nav bar-->
+<center>
+    <h2>TO Do List</h2>
+    <div id="toDoListBox">
+        <button id = deleteactivity onclick="deleteActivities(event);">Clear List</button>
+        <!--<button id="clear">Clear</button>        This is a clear button work on this later-->
+        <input id ="activity"><!--user inputs their activity in here.-->
+                <select id ="colorInput"><!--This is the id that connects to the operator var and is connected to selected var. Allows the user to choose the operator that they want to use-->
+                    <option value="black" style = "color:black; font-weight:bold;">Dont Forget</option> <!--Black text-->
+                    <option value="blue" style = "color:blue; font-weight:bold;">Work On</option> <!--subtract-->
+                    <option value="green" style = "color:green; font-weight:bold;">Gator Done</option> <!--multiply-->
+                    <option value="red" style = "color:red; font-weight:bold;">Top Priority</option> <!--divide-->
+                </select>   
+        <button id="addactivity">Add</button><!--This is the button where they click to add an event to the list-->
+    </div>
+    <br>
+    <br>
+    <div id = "noteBox">
+        <div id ="list">
+        </div>
+    </div>
+
+</center>
+    </body>
+
+<script type="text/javascript" src="todo.js"></script>
+
+</html>

@@ -8,12 +8,12 @@ var runCalculate = document.getElementById("runCalculate");//we are telling the 
 runCalculate.addEventListener("click", function(){
 
 
-var selected = operator.value;//New variable that we use to check what option is used by the user of the calcluator
+var selected = operator.value;//New variable that we use to check what option is used by the user of the calcluator because without it, the code would not be able to check what kind of operation it is supposed to calculate.
 
 
 //This is the beginning of addition
  if (selected === "+"){
-     var answer = parseInt(userNumber1.value) + parseInt(userNumber2.value);
+     var answer = parseInt(userNumber1.value) + parseInt(userNumber2.value);//The parseInt is used because 
      //answer.innerHTML = "answer";
      document.getElementById("answer").innerHTML = answer;
 }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+            <link rel="stylesheet" href="navbar.css" type="text/css" />
+            <!--Remember that this is using what we wrote in the navbar.css file-->
+            <style>
+                /*Use this space for the css styling*/
+            </style>
+    </head>
+    <body>
+        <!--This is the beginning of the nav bar-->
+        <h1 id="navheading">Computer Science</h1>
+        <a href="http://imaninja.com/">
+        <img id="imglechuga"  src="kinglechuga.png">
+        </a>
+        <ul id="navbar">
+            <li><a href="index.html">About Me</a></li>
+            <!--<li><a href="#"><img src="https://a2ua.com/silhouette/silhouette-008.jpg"></a></li>-->
+            <li><a href="hardware.html">Hardware</a></li>
+            <!--<li><a href="#"><img src="http://img.wallpaperfolder.com/f/5D9BAE7D5537/computer-parts-zone.jpg"></a></li>-->
+            <li><a href="calculator.html">Calculator</a></li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="todolist.html">ToDo List</a></li>
+            <!--<li><a href="#"><img src="http://www.ineedmotivation.com/blog/wp-content/uploads/2008/01/todo.jpgz"></a></li>-->
+            <li><a href="#">Vindinium</a> </li>
+            <!--<li><a href="#"><img src="http://www.extremetech.com/wp-content/uploads/2015/05/ai-cropped-640x353.jpg"></a></li>-->
+            <li><a href="#">Big Project</a> </li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="howto.html">How TO?</a></li>
+            <li><a href="theend.html">The End</a></li>
+        </ul>
+        <!--This is the end of the nav bar-->
+    <h2>How to Block 2</h2><!--This is just the heading on the top of the page-->
+    <center>
+        <div class=container><!--This div is to make sure that everything that we write does not get messed up and can be orderd on the page nicely-->
+            <!--Inside this div you can actually put images and text so that they look nicely together-->
+            <p>Javascript is a computer language that is commonly used on the world wide web to manipulate the DOM. The DOM, or Document Object Model, is the html code that the creates what happens behind what the user sees. What Javascript does is it manipulates this so that users can see and do more than what the standard html allows. Much like how CSS changes what the user can see, the Javascript can do this along with what is happening and what can happen. For example, I used Javascript to create a todo list. Inorder to do this, I had to break up my code into two places: <span style="color:green; font-weight:bold; text-align:center;">HTML and Javascript</span></p>
+            <img src="javascript_logo.png">
+        </div>
+        
+    <h2>HTML</h2>
+        <div class=container>
+            <p style="max-width:75%">Before I start to talk about the actual code that makes up the to do list, it's important to realize that because the javascript is a different language than HTML, we have to tell the HTML that we will be speaking javascript. We can do this in one of two places, the head of the HTML or in the body of the HTML. I chose to write in the body, and all we have to do is write<span style="font-weight:bold;"> &lt;script type=&rdquo;text/javascript&rdquo; src=&rdquo;todo.js&rdquo;&gt;&lt;/script&gt;</span> and all this means is that the script tags <span style="font-weight:bold;">&lt;script&gt;&lt;/script&gt;</span> will be javascript. Because it is in the body we can choose to write our javascript in between these script tags, but I chose to write my code in a separate js file, so I have to tell the HTML to look for todo.js(what I named my javascript file) and use the code that is in this file.</p>
+            <div>
+                <img src="screen1.png">
+                <p>When I was first working on my project, I didn&rsquo;t tell the HTML to look for over even try to listen to the javascript, so I spent about a day of work trying to figure out why nothing was working. All my functions in the Javascript file were correct yet the website simply would not do what I had written. This is definitely one of my many embarrassing moments in class because after Mr. Hesby wrote <span style="font-weight:bold;">&lt;script type=&rdquo;text/javascript&rdquo; src=&rdquo;todo.js&rdquo;&gt;&lt;/script&gt;</span> the program worked seamlessly.*facepalm*</p>
+            </div>
+        </div>
+        <div class=container>
+            <p>Now that I have my HTML listening to JavaScript, I can begin to create the different id&rsquo;s in my HTML. </p>
+            <img src="id-exp.JPG" style="padding-top:3%;">
+        </div>
+        <div class=container>
+            <p>In total, there were 5 ids that were necessary for my todo list; <span style="font-weight:bold;">delete activity, activity, colorInput, addactivity, and list.</span></p>
+            <img src="ids-total.JPG">
+        </div>
+        <div class=container>
+            <p>And this is pretty much the only necessary ids for a working calculator and from here we can finally move over to the Javascript which is even more fun.</p>
+        </div>
+        <h2>JavaScript</h2>
+        <div class=container>
+            <p>So we have these 5 ids, but what do we do with them? Well these id&rsquo;s are extremely important because we can use Javascript to manipulate what happens with these ids. Let's start with changing these id&rsquo;s into variables. Variables can be thought of as a container, in the container we can program the computer to store data. Let's look at the addactivity variable for example. Looking at the list of ids, we can see that this id is supposed to represent a button. But how does the Javascript even know that this id exists? Well we can actually tell the computer to look for data to store into this data. And we do that by setting the variable to document.getElementById(&ldquo;id name&rdquo;)</p>
+            <img style="padding-top:3%;" src=vars-4.JPG>
+        </div>
+        <div class=container>
+            <p>Basically we are telling the variable to get data from an id known as addactivity which for convenience is the same name as the variable. This document.getElementById is actually a variable that was preprogramed into JavaScript so that we lazy programers do not have to each make a variable for getting information from another file</p>
+        </div>
+        <div class=container>
+            <p>As stated though, this addactvity id is supposed to be a button, so how do we make the HTML look for this button getting click? Well there are actually two ways to do this. For the addactivity button, however, I used an addEventListener.</p>
+            <img style="padding-top:4%;" src="eventact.JPG">
+        </div>
+        <div class="container">
+            <p>Now we can have it looking for a number of different things, but for a button I want the user to be able to click it, so in the parenthesis I put &ldquo;click&rdquo; which is a preprogrammed event that listens for the users mouse to click.</p>
+            <img style="padding-top:4%;" src="click-exp.JPG">
+        </div>
+        <div class="container">
+            <p>So now we have a way to look for a click, but how do we actually get it to do what it needs to do? Well here is where we begin the real process of a to do list, and that begins by creating a function. A function could be thought of as another container. This container however does not store data, rather it contains code that is meant to perform a specific task.</p>
+        </div>
+        <h2>Adding to the list</h2>
+        <div class="container">
+            <p>So we have this empty function, and we have this empty to do list. How do we take a user input and add it to the todo list. Quite simply, we do this in the function of the eventlistener. It's important though to point out what the input variable is. Looking at the html we can see that there is and &lt;input&gt; with a id of activity.</p>
+            <img style="padding-top:4%;" src="id-activity.JPG">
+        </div>
+        <div class="container">
+            <p>And we already have a variable for this id in our Javascript file.</p>
+            <img style="padding-top:3%;" src="var-activity.JPG">
+        </div>
+        <div class="container">
+            <p>So let me just show you the code I used.</p>
+            <img src="adding.JPG">
+        </div>
+        <div class="container">
+            <p>Now lets break it down.</p>
+        </div>
+        <div class="container">
+            <p>I did not want people to just keep spamming the add button, so I made an if else statement saying that if the input is empty it will alert that you need to add some text.</p>
+            <img style="padding-top:3%;" src="aler-1.JPG">
+        </div>
+        <div class="container">
+            <p>Other wise it will take the value of the input. And it will make add it and make it equal to what the user put into the input.</p>
+            <img src="adding2.JPG">
+        </div>
+        <div class="container">
+            <p>Now this will just get a standard piece of text, but as you can see we put it in the middle of a div, this being said, we now have a lot more control over what can happen to it. This is where I added one of my first features, color coding. Different activities should have a different status. So by quickly jumping to the HTML again, we made an id for this exact feature. This is in a &lt;select&gt; which allows us to create a dropbox of different options. We can set the value of these options to certain colors that I want to use.</p>
+            <img src="select.JPG">
+        </div>
+        <div class="container">
+            <p>Now we just say that we want to change the style of the div, and the color of the text using css. And that color will be the value of the drop down option.</p>
+            <img style="padding-top:3%;" src="colors.JPG">
+        </div>
+        <div class="container">
+            <p>And Boom, we can add and set the colors of different activities on our to do list.</p>
+            
+        </div>
+        <h2>Delete the todo list</h2>
+        <div class="container">
+            <p>As stated, there are two ways of creating a event listener. I already explained the Javascript way, but there is another that actually is down in the HTML. I want my users to be able to clear the todo list. In Order to do this, I created the deleteActivities button</p>
+            <img style="padding-top:3%;" src="clearall.JPG">
+        </div>
+        <div class="container">
+            <p>This image is from my HTML, as you can see I created a onclick event named deleteActivities. By itself, deleteActivites does nothing, because it is just an empty function. This is where Javascript comes in. In the Javascript I was able to program the code block for what will happen.</p>
+            <img style="padding-top:3%;" src="function.JPG">
+        </div>
+        <div class="container">
+            <p>Again I used an If statement. All this is, is a confirmation box that pops up to confirm if the user wants to clear the entire list. I added this so my users do not accidentally delete everything on their list. But if the user clicks yes, all I did to clear it was set my list variable to empty quotation marks &ldquo;&rdquo;.</p>
+            <img style="padding-top:3%;" src="">
+        </div>
+        <div class="container">
+            <p>And Boom, this is my todo list.</p>
+            
+        </div>
+        
+    </center>
+    
+    </body>
+</html>
