@@ -3,33 +3,122 @@
     <head>
         <title> </title>
         <style>
-        #noteBox{
-            border-style:inset;
-            border-color:#7D6208;
-            background-color: #C19A18;
+        #chatBox{
+            border-top-style: solid;
+            border-right-style: solid;
+            /*border-bottom-style: solid;*/
+            border-left-style: solid;
+            border-radius:15px;
+            /*border-color:#7D6208;
+            /*background-color: #C19A18;*/
             border-width: 5px;
-            text-align: center;
             padding: 10px;
-            min-width:40%;
-            max-width:40%;
-            min-height:25pc;
-            font-size:25px;
+            width:300px;
+            height:30pc;
+            /*font-size:25px;*/
+            overflow:auto;
+            border-radius:15px 15px 0px 0px;
+        }
+        #messageWriter{
+            /*border-color:#7D6208;
+            /*background-color: #C19A18;*/
+            /*border-top-style: dotted;*/
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-radius:0px 0px 15px 15px;
+            border-width: 5px;
+            padding: 10px;
+            width:300px;
+            /*font-size:25px;*/
+        }
+        #userChat{ 
+            background-color: #d9d9d9;
+            border-width: 5px;
+            border-color:#d9d9d9;
+            border-style:solid;
+            border-radius:5px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        #send{
+            background-color: #d9d9d9;
+            border-style:solid;
+            border-radius:5px;
+            border-width: 5px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        #homeButtonFake{
+            background-color: #d9d9d9;
+            border-style:solid;
+            border-radius:5px;
+            border-width: 5px;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        #jorgeID{
+            background-color: #d9d9d9;
+            border-style:none;
+            border-radius:5px;
+            border-width: 5px;
+            padding: 2px;
+            max-width:45px;
+            border-radius: 25px;
         }
         </style>
     </head>
+        <link rel="stylesheet" href="navbar.css" type="text/css" />
     <body>
+        <!--This is the beginning of the nav bar-->
+        <h1 id="navheading">Computer Science</h1>
+        <a href="http://imaninja.com/">
+        <img id="imglechuga"  src="kinglechuga.png">
+        </a>
+        <ul id="navbar">
+            <li><a href="index.html">About Me</a></li>
+            <!--<li><a href="#"><img src="https://a2ua.com/silhouette/silhouette-008.jpg"></a></li>-->
+            <li><a href="hardware.html">Hardware</a></li>
+            <!--<li><a href="#"><img src="http://img.wallpaperfolder.com/f/5D9BAE7D5537/computer-parts-zone.jpg"></a></li>-->
+            <li><a href="calculator.html">Calculator</a></li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="todolist.html">ToDo List</a></li>
+            <!--<li><a href="#"><img src="http://www.ineedmotivation.com/blog/wp-content/uploads/2008/01/todo.jpgz"></a></li>-->
+            <li><a href="Vindinium.html">Vindinium</a> </li>
+            <!--<li><a href="#"><img src="http://www.extremetech.com/wp-content/uploads/2015/05/ai-cropped-640x353.jpg"></a></li>-->
+            <li><a href="Jorge.html">Big Project</a> </li>
+            <!--<li><a href="#"><img src="http://www.timesmicrowave.com/images/cms_images/calculator_photo.jpg"></a></li>-->
+            <li><a href="howto.html">How TO?</a></li>
+            <li><a href="theend.html">The End</a></li>
+        </ul>
+<!--This is the end of the nav bar-->
+<center>
+    <div id="phoneBox">
+        <div id = "chatBox" style="background:white;">
+            <div>
+                <h1 id="jorgeID">J</h1>
+            </div>
+            <!--<div id ="showUserChat">-->
+            <div id="showUserChat"></div>
+            <!--<div id ="aiChat"></div>-->
+            <div id="showJorgeChat"></div>
+        </div>
         
-        <input id="userChat"> <!--Users input to the chatbot-->
-        <!--Important Id-->
-        <button id="send">Chat</button><!--Ipmortant id, used to-->
-        
-    <div id = "chatBox">
-        <!--<div id ="showUserChat">-->
-        <!--<div id ="aiChat"></div>-->
-        <div id="showChat"></div>
+        <div id = "messageWriter" style="background:white;">
+            <input id="userChat"> <!--Users input to the chatbot-->
+            <!--Important Id-->
+            <button id="send">Chat</button><!--Ipmortant id, used to-->
+            <br>
+            <br>
+            <center>
+            <!--<button id="homeButtonFake">O</button>-->
+            </center>
+        </div>
+        <div>
+
+        </div>
     </div>
-        
-        
+</center>
 <script type="text/javascript" src="Jorge.js"></script>
     </body>
 </html>
