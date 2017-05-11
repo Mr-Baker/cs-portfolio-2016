@@ -84,6 +84,7 @@ send.addEventListener("click", function() {; //this is the main event listener l
         var objChatBox = document.getElementById("chatBox");
         objChatBox.scrollTop = objChatBox.scrollHeight;
         userChat.value = "";
+        //window.location.reload();
     }
 
 
